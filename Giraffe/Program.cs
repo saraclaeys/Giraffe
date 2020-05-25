@@ -6,9 +6,11 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            string phrase = "Giraffe Academy";
-            char grade = 'A';
-            int age = 30;
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            string age = Console.ReadLine();
+            Console.WriteLine("Hello " + name + " you are " + age);
 
             Console.ReadLine();
         }

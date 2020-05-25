@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z8tvnenPP59HPIk+q6ov4zQIDe3Ddnc7mDX/gXtM+rSyOED4AY94Eh2Bk8esffPPeTGROb08HpnoAGfxe91Y0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sarac\\source\\repos\\Giraffe\\Giraffe\\Giraffe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sarac\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

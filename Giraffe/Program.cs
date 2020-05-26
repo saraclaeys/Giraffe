@@ -6,15 +6,29 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            SayHi("Sara", 29);
+            bool isMale = false;
+            bool isTall = false;
+
+            if (isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male");
+
+            } else if (isMale && !isTall)
+            {
+                Console.WriteLine("You are a short male");
+
+            } else if (!isMale && isTall)
+            {
+                Console.WriteLine("You are not a male but you are tall");
+
+            } else
+            {
+                Console.WriteLine("You are not male and not tall");
+            }
 
             Console.ReadLine();
         }
 
-        static void SayHi(string name, int age)
-        {
-            Console.WriteLine("Hello " + name + ", you are " + age);
-
-        }
+   
     }
 }

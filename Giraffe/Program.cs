@@ -6,29 +6,45 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetMax(20, 10, 40));
+            Console.WriteLine(GetDay(5));
      
             Console.ReadLine();
         }
-
-        static int GetMax(int num1, int num2, int num3)
+   
+        static string GetDay(int dayNum)
         {
-            int result;
+            string dayName;
 
-            if (num1 >= num2 && num1 >= num3)
+            switch(dayNum)
             {
-                result = num1;
-            } else if (num2 >= num1 && num2 >= num3)
-            {
-                result = num2;
-            } else
-            {
-                result = num3;
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "It's Friday, I'm in love";
+                    break;
+                case 6:
+                    dayName = "Saterday";
+                    break;
+                default:
+                    dayName = "Invalid Day Number";
+                    break;
             }
 
-            return result;
+            return dayName;
         }
 
-   
     }
 }

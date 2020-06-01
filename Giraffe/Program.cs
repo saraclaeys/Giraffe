@@ -6,14 +6,20 @@ namespace Giraffe
     {
         private static void Main(string[] args)
         {
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+            Console.WriteLine(GetPow(3, 2));
+            Console.ReadLine();
+        }
 
-            for (int i = 0; i <= luckyNumbers.Length; i++)
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for (int i = 0; i < powNum; i++)
             {
-                Console.WriteLine(luckyNumbers[i]);
+                result = result * baseNum;
             }
 
-            Console.ReadLine();
+            return result;
         }
     }
 }

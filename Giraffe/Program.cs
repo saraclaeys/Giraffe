@@ -6,17 +6,13 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book(); // new object
-            book1.title = "Harry Potter";
-            book1.author = "JK Rowling";
-            book1.pages = 400;
+            Book book1 = new Book("Harry Potter", "JK Rowling", 400); // new object
 
-            Book book2 = new Book(); // new object
-            book2.title = "Lord of the Rings";
-            book2.author = "Tolkein";
-            book2.pages = 700;
+            Book book2 = new Book("Lord of the Rings", "Tolkein", 700); // new object
 
-            Console.WriteLine(book2.author);
+            book2.title = "The hobbit"; // update title
+
+            Console.WriteLine(book2.title);
 
             Console.ReadLine();
         }

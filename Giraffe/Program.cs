@@ -4,18 +4,15 @@ namespace Giraffe
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Book book1 = new Book("Harry Potter", "JK Rowling", 400); // new object
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
 
-            Book book2 = new Book("Lord of the Rings", "Tolkein", 700); // new object
-
-            book2.title = "The hobbit"; // update title
-
-            Console.WriteLine(book2.title);
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
 
             Console.ReadLine();
         }
-
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Giraffe
+﻿namespace Giraffe
 {
-    class Book
+    internal class Book
     {
         public string title;
         public string author;
